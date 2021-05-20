@@ -1,0 +1,341 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-image: url(softball-tiles.jpg);
+    background-repeat: repeat;
+}
+
+/* header */
+.head-container {
+  font-size: 0;
+}
+
+header {
+    background: dodgerblue;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+/* fixed header stuff */
+.fixed-header header {
+  position: fixed;
+  top: 0;
+}
+
+/* fixed header stuff */
+
+.banner {
+  aspect-ratio: 16/9;
+  width: 80vw;
+}
+
+.tabs {
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tab a {
+    text-decoration: none;
+    color: white;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon img {
+    height: 2rem;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.tab:hover {
+    background: rgb(24, 112, 199);
+}
+
+
+/* Super Container */
+.super-container {
+    width: 80vw;
+    background-color: aliceblue;
+}
+
+/* main */
+
+.main-container {
+  padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(33, 42, 177);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.article-title {
+  font-size: 1.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(60, 129, 255);
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.content {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0.5rem;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-container img {
+  max-width: 100%;
+  padding: 0.5rem;
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
+}
+
+.bylaws {
+    height: 10vh;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+/* sponsors */
+
+.sponsors {
+  background-color: aliceblue;
+  text-align: center;
+  padding: 10px;
+}
+
+.sponsor-banner {
+  font-size: 40px;
+  font-weight: bolder;
+  background-color: dodgerblue;
+  width: 100%;
+  height: min-content;
+}
+
+.grid-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+                      "item1 item2 "
+                      "item3 item4"
+                      "item5 item6";
+}
+
+.grid-item-1 {
+  grid-area: item1;
+}
+.grid-item-2 {
+  grid-area: item2;
+}
+.grid-item-3 {
+  grid-area: item3;
+}
+.grid-item-4 {
+  grid-area: item4;
+}
+.grid-item-5 {
+  grid-area: item5;
+}
+.grid-item-6 {
+  grid-area: item6;
+}
+
+.sponsorPic {
+  max-width: 100%;
+}
+
+/* address */
+
+.addressContainer {
+  height: fit-content;
+  padding: 20px
+}
+
+.coachName {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+iframe {
+ align-self: center;
+ width: 100%;
+}
+
+
+/* slideshow */
+
+.slideshow-container {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: white;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    font-size: 0;
+  }
+
+  /* Next & previous buttons */
+    .arrow-buttons {
+      position: absolute;
+      width: 80vw;
+      display: flex;
+      justify-content: space-between;
+    }
+
+  .prev, .next {
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    color: white;
+    background-color: rgba(0,0,0,0.2);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .caption {
+    position: absolute;
+    top: 0;
+    color: white;
+    font-size: 1.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 80vw;
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .pictureSlide {
+    aspect-ratio: 16/9;
+  }
+  /* drop down menu for the team button */
+
+  .dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position:relative;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.calendar {
+  width: 75vw;
+  height: 80vh;
+}
